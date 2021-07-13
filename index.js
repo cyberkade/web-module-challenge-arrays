@@ -141,7 +141,7 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(originalFlavors, flavor){
-  let index = originalFlavors.indexOf(flavor)  
+  const index = originalFlavors.indexOf(flavor)  
   originalFlavors.splice(index, 1);
   return originalFlavors;
 }
@@ -168,7 +168,7 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(originalFlavors,flavor){
-  let newFlavors = []
+  const newFlavors = []
   for(let i = 0 ; i < originalFlavors.length ; i++){
     if(originalFlavors[i].includes(flavor)){
       newFlavors.push(originalFlavors[i]);

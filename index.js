@@ -46,8 +46,7 @@ Use the copy function below to do the following:
 */
 
 function copy(arr){
-  let ogCopy = arr
-  return ogCopy;
+  return arr.slice();
 }
 
 
@@ -65,8 +64,8 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(ogCopy){
- if(ogCopy.length === 31){
+function is31Flavors(originalFlavors){
+ if(originalFlavors.length === 31){
    return true;
  }else{
    return false;
@@ -146,7 +145,6 @@ function removeFlavorByName(originalFlavors, flavor){
   originalFlavors.splice(index, 1);
   return originalFlavors;
 }
-removeFlavorByName(originalFlavors, 'Chocolate');
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -178,8 +176,6 @@ function filterByWord(originalFlavors,flavor){
   }
   return newFlavors;
 }
-
-filterByWord(originalFlavors, 'Chocolate');
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 

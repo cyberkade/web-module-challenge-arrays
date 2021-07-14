@@ -305,10 +305,15 @@ const regionalFlavors = [
   "Caramel 'n' Cookies"
 ]
 
-function getRandomFlavors(/*code here*/){
-  /*code here*/
+function getRandomFlavors(arrOne,arrTwo,arrThree,arrFour){
+  const newArray = [...arrOne,...arrThree,...arrTwo,...arrFour];
+  const randomFlavors = [];
+  for( i = 0; i < 31; i++){
+  randomFlavors.push(newArray[Math.floor(Math.random()*newArray.length)]);
+  }
+  return randomFlavors;
 }
-
+// getRandomFlavors(originalFlavors,regionalFlavors,seasonalFlavors,newFlavors);
 /* 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 */
 function foo(){
   console.log('its working');

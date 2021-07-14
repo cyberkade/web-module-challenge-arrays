@@ -46,7 +46,7 @@ Use the copy function below to do the following:
 */
 
 function copy(arr){
-  return arr.slice();
+  return [...arr]
 }
 
 
